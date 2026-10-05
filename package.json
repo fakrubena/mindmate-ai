@@ -1,0 +1,1 @@
+{"name":"mindmate-ai","version":"2.1.0","private":true,"type":"module","scripts":{"start":"node start.js","test":"node --test engine.test.js learning.test.js integration.test.js"},"engines":{"node":">=22"}}

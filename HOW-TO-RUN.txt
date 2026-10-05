@@ -1,0 +1,51 @@
+MINDMATE AI (formerly GuideAI) — HOW TO RUN
+
+1. Install Node.js 22 or later if it is not already installed.
+2. Double-click START-MINDMATE.cmd in this folder.
+   START-GUIDEAI.cmd also works for compatibility.
+3. Keep the terminal open and visit the address it prints:
+   http://localhost:3040 by default.
+4. Press Ctrl+C in the terminal to stop.
+
+No npm install is required: this application has no external packages.
+Alternative: open a terminal here and run npm start.
+
+MISSING .env
+The launcher creates .env from .env.example if needed. Even if both are
+missing, node start.js starts built-in learning without an API key.
+Do not name the file .env.txt. Enable File Explorer > View > File name extensions.
+
+OPTIONAL LIVE AI
+Edit .env in Notepad. Set OPENAI_API_KEY to your own valid OpenAI API key.
+Restart after changing settings. Never put keys in public/ files or chat.
+The configured-key badge does not verify credits. If quota is exhausted,
+built-in lessons, quizzes, materials, planner and rooms still work.
+An Antigravity coding-assistant quota is separate from this app's API usage.
+This app uses OpenAI, not GEMINI_API_KEY or Antigravity's embedded runtime.
+
+FIRST TRY
+Choose Mentor > a built-in lesson. Try an answer, request a hint and explain
+its method. Explore Practice, Materials, Planner, Focus and Progress.
+Enable Personal memory in Settings to retain learning history after closing.
+
+STUDY ROOMS
+Create a room, copy its invitation link and open it in another browser or
+private window on this computer. Save distinct profiles in Study buddies
+and enable discovery to test matching. No fake participants are supplied.
+Rooms provide chat, shared notes, goals, synchronized timer and quiz rounds.
+The host starts quizzes/reveals answers. Shared AI needs API credits.
+localhost links do not work on a friend's different computer. Shared hosting
+and deployment setup are needed for remote use.
+
+TROUBLESHOOTING
+- Port in use: stop the existing app or set PORT=3041 in .env, then restart.
+- node not recognized: install Node.js, then reopen the terminal.
+- AI error: check the configured key and API credits.
+- History missing: use the same browser and port; enable memory.
+
+DATA AND BACKUPS
+Learning history is browser-local when memory is enabled.
+Profiles, invitations and rooms are stored in data/mindmate.json.
+Use Settings to export/delete data. Stop the server before backing up data/.
+Do not publicly share .env, data/, or backup folders.
+See README.md for feature boundaries and tests.

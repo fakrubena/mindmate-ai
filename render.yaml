@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: mindmate-ai
+    runtime: node
+    plan: free
+    buildCommand: node --check server.js && node --check public/app.js
+    startCommand: npm start
+    healthCheckPath: /api/config
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: OPENAI_MODEL
+        value: gpt-4.1-mini
