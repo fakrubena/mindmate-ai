@@ -3,7 +3,7 @@
 The app needs a Node server; GitHub Pages cannot run its backend. No passwords, API keys, local profiles, rooms or backups belong in GitHub. The ignore file excludes these.
 
 ## GitHub
-Sign in securely as ganapathybalasingar-sy and create a repository named mindmate-ai (or another available name). Push this folder's main branch. Never put passwords or tokens in remote URLs. The repository link is not the app link.
+Sign in securely as fakrubena and create a repository named mindmate-ai (or another available name). Push this folder's main branch. Never put passwords or tokens in remote URLs. The repository link is not the app link.
 
 ## Render
 1. Sign in to Render and connect your GitHub repository.
